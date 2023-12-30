@@ -10,7 +10,7 @@ prev:
 
 <!-- @format -->
 
-# Components in Nørd
+# Components
 
 Components are at the core of Nørd's architecture. They define the structure and behaviour of user interface elements in your application. A component in Nørd is a function that returns a NodeList based on a provided template. Let's explore how to create and use components.
 
