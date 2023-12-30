@@ -26,7 +26,7 @@ const App = createComponent((html) => {
 });
 ```
 
-After creating the root component, it needs to be attached to the DOM. This is done using the [`render`](../api/render.md) function, that can be imported just like the [`createComponent`](../api/create-component.md) function.
+After creating the root component, it needs to be attached to the DOM. This is done using the [`render`](./application.md#api) function, that can be imported just like the [`createComponent`](./components.md#api) function.
 
 ```js
 import { createComponent, render } from '@grainular/nord';
