@@ -49,9 +49,9 @@ const targetElement = document.querySelector('#app');
 render(Counter, { target: targetElement });
 ```
 
-## Nesting Components in Nørd
+## Nesting Components
 
-Nesting components in Nørd is a powerful technique that allows you to build complex and reusable user interfaces by combining smaller components. This section provides a comprehensive guide on how to nest components effectively.
+Nesting components is a powerful technique that allows you to build complex and reusable user interfaces by combining smaller components. This section provides a comprehensive guide on how to nest components effectively.
 
 ### Example
 
