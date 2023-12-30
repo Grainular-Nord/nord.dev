@@ -10,7 +10,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Examples', link: '/markdown-examples' },
+            { text: 'Quick Start', link: '/guide/getting-started' },
         ],
 
         sidebar: [
@@ -36,12 +36,6 @@ export default defineConfig({
                 text: 'Directives',
                 base: '/directive/',
                 items: directives(),
-                collapsed: false,
-            },
-            {
-                text: 'Api',
-                base: '/api/',
-                items: api(),
                 collapsed: false,
             },
         ],
@@ -78,6 +72,7 @@ function essentials(): DefaultTheme.SidebarItem[] {
         { text: 'Components', link: '/components' },
         { text: 'Grains', link: '/grains' },
         { text: 'Directives', link: '/directives' },
+        { text: 'Context', link: '/context' },
     ];
 }
 
@@ -100,14 +95,5 @@ function directives(): DefaultTheme.SidebarItem[] {
         { text: 'ref', link: '/ref' },
         { text: 'unsafe-html', link: '/unsafe-html' },
         { text: 'reactive', link: '/reactive' },
-    ];
-}
-
-function api(): DefaultTheme.SidebarItem[] {
-    return [
-        { text: 'render', link: '/render' },
-        { text: 'createComponent', link: '/create-component' },
-        { text: 'createComponent', link: '/create-directive' },
-        { text: 'createContext', link: 'create-context' },
     ];
 }
