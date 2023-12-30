@@ -155,7 +155,7 @@ MyComponent.setStyle((css) => {
 
 ## API
 
-The `createComponent` function in Nørd is a fundamental building block for defining custom components with customizable behavior and structure. It enables developers to create reactive components by specifying a template and optional lifecycle methods.
+The `createComponent` function in Nørd is a fundamental building block for defining custom components with customizable behaviour and structure. It enables developers to create reactive components by specifying a template and optional lifecycle methods.
 
 ### Type
 
