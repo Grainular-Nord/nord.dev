@@ -114,6 +114,8 @@ import * as nord from 'http://unpkg.com/@grainular/nord/dist/index.mjs';
 const App = nord.createComponent((html) => {
     // ... rest of your component
 });
+
+nord.render(App, { target: document.querySelector('#app') });
 ```
 
 :::
