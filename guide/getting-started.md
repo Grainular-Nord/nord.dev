@@ -1,13 +1,12 @@
 ---
 outline: deep
-editLink: true
 ---
 
 <!-- @format -->
 
 # Getting started
 
-## Try Nørd in the Browser
+## Try Nørd in your Browser
 
 There are several ways to try out Nørd online, without ever opening a code editor.
 
@@ -36,7 +35,7 @@ $ npm create @grainular/nord
 
 The command will install and execute [`@grainular/create-nord`](https://github.com/IamSebastianDev/create-nord), the official Nørd scaffolding tool. Follow the presented prompts and select a template to scaffold a project in the selected directory.
 
--   `Nørd Web`: A simple, html based setup without any build tools.
+-   `Nørd Web`: A basic html based setup without any build tools.
 -   `Nørd Web (modules)`: A html based application utilising JavaScript modules.
 -   `Nørd Vite`: A modern, Vite based template.
 -   `Nørd Vite TypeScript`: A modern, Vite based template using TypeScript.

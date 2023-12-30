@@ -30,7 +30,7 @@ Nørd was developed with a set of core concepts in mind.
 
 ### No JSX
 
-Nørd takes a unique approach by avoiding JSX. Instead, it uses tagged template literals to define templates and components. This approach provides a clean and intuitive way to describe the structure of components without introducing JSX syntax. This also means that Nørd can stay dependency free and be easily included in simple web applications without the need to compile JSX. When writing in Nørd, you write actual HTML, like in [Svelte](https://svelte.dev/) or [Angular](https://angular.dev/).
+Nørd takes a unique approach by avoiding JSX. Instead, it uses tagged template literals to define templates and components. This approach provides a clean and intuitive way to describe the structure of components without introducing JSX syntax. This also means that Nørd can stay dependency free and be included in basic web applications without the need to compile JSX. When writing in Nørd, you write actual HTML, like in [Svelte](https://svelte.dev/) or [Angular](https://angular.dev/).
 
 ### Grains
 
