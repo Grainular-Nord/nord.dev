@@ -12,7 +12,7 @@ prev:
 
 # Components
 
-Components are at the core of Nørd's architecture. They define the structure and behaviour of user interface elements in your application. A component in Nørd is a function that returns a NodeList based on a provided template. Let's explore how to create and use components.
+Components are at the core of Nørd's architecture. They define the structure and behaviour of user interface elements in your application. A component in Nørd is a function that returns a NodeList based on a provided template. Component functions are only ever called once. Let's explore how to create and use components.
 
 ## Creating a Component
 
@@ -127,6 +127,10 @@ const MyComponent = createComponent((html, { $onMount, $onDestroy }) => {
     // ...rest of the component...
 });
 ```
+
+::: tip
+While the component function only being executed once means that all code running inside the component function is run when the component is created, a `onMount` function is still useful to execute code **AFTER** the component is actually inserted into the DOM.
+:::
 
 ::: info
 The `onMount` lifecycle hook will only be triggered once all elements that are returned in the Components NodeList are connected. Similar to this, all elements need to be removed for the `onDestroy` hook to be triggered.
