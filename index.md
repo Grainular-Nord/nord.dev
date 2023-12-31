@@ -5,7 +5,7 @@ layout: home
 hero:
     name: 'Nørd'
     text: 'Minimal & Progressive'
-    tagline: 'Web framework'
+    tagline: 'The Granular Framework Experience'
     actions:
         - theme: brand
           text: Get started
@@ -27,6 +27,8 @@ features:
     - icon: 🧩
       title: Powerful Global Reactivity
       details: Grains provide an excellent reactivity experience.
+      link: /guide/grains
+      linkText: Learn more about Grains
 ---
 
 <!-- @format -->
