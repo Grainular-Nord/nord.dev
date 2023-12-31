@@ -57,6 +57,9 @@ export default defineConfig({
         },
     },
     srcExclude: ['readme.md', 'license.md', 'contributing.md'],
+    sitemap: {
+        hostname: 'https://nordjs.dev',
+    },
 });
 
 function introduction(): DefaultTheme.SidebarItem[] {
