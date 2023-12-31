@@ -2,15 +2,25 @@
 
 import { DefaultTheme, defineConfig } from 'vitepress';
 
+const getPackageVersion = async () => {
+    return await fetch('https://registry.npmjs.org/@grainular/nord/latest')
+        .then((res) => res.json())
+        .then(({ version }) => version);
+};
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'Nørd',
     description: 'minimal & progressive web framework',
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
+        logo: '/nord-logo.png',
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Quick Start', link: '/guide/getting-started' },
+            {
+                text: `Nørd: v.${await getPackageVersion()}`,
+                link: 'https://github.com/iamsebastiandev/nord',
+            },
         ],
 
         sidebar: [
@@ -40,7 +50,7 @@ export default defineConfig({
             },
         ],
 
-        socialLinks: [{ icon: 'github', link: 'https://github.com/iamsebastiandev/nord' }],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/iamsebastiandev/nord.dev' }],
 
         search: {
             provider: 'local',
@@ -55,6 +65,8 @@ export default defineConfig({
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2023-present Sebastian Heinz',
         },
+
+        externalLinkIcon: true,
     },
     srcExclude: ['readme.md', 'license.md', 'contributing.md'],
     sitemap: {
