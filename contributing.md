@@ -17,7 +17,7 @@ After installing the necessary tools, you can run the commands below to start de
 
 ## Development - Setting Up The Repository
 
--   clone the repository by running `git clone {{ repository.url }}` in your terminal or shell to clone the repo into the current directory.
+-   clone the repository by running `git clone https://github.com/IamSebastianDev/nord.dev.git` in your terminal or shell to clone the repo into the current directory.
 -   run `yarn` or `yarn install` to install the dependencies.
 -   run `yarn setup`. This will install the necessary husky scripts.
 
@@ -29,7 +29,6 @@ After installing the necessary tools, you can run the commands below to start de
 -   `yarn build`: Builds the library
 -   `yarn dev`: Build the library in watch mode
 -   `yarn lint`: Runs [alex](https://alexjs.com) as linter
--   `yarn test`: Runs [AVA](https://github.com/avajs/ava) with the tests supplied in the `tests` directory
 
 ## Development - Enforcing Code Standards
 
@@ -58,11 +57,3 @@ $ git checkout development
 $ git checkout -b bugfix/bug-to-fix
 # creates a new branch with the correct branch type prefixed
 ```
-
-## Development - Tests
-
-If you add new functionality, tests should be added. The project uses [AVA](https://github.com/avajs/ava) as test runner. Tests can be found under the `tests` directory. Tests are written per file and should clearly indicate which function they test. All tests are written in TypeScript.
-
-## Development - Github Actions
-
--   Publish: A automatic action that is triggered when merging into the `release` branch. Will create a new Release and publish it to npm.
