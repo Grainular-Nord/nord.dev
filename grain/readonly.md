@@ -50,5 +50,5 @@ unsubscribe();
 ```
 
 ::: info In The Code:
-You can see the function signature & implementation here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts)
+You can see the function signature & implementation here: [readonly.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts)
 :::
