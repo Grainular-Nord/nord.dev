@@ -96,3 +96,5 @@ The `createDirective` function is used to create reusable directives, that apply
 ### Parameters
 
 -   `handler` (Type: `(node: NodeType) => void`): The handler to execute with the associated node. This is what makes up the core of the directive.
+-   `options` (Type: `DirectiveOptions`): A optional options object to configure the created directive.
+    -   `nodeType` (Type: `'Text'` | `'Element'`): Set to have the directive only accept one kind of `Node`. If set, the directive will throw when an incorrect type is received.
