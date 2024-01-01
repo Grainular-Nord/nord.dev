@@ -1,5 +1,8 @@
 ---
 outline: deep
+next:
+    text: 'What is Nørd?'
+    link: '/guide/introduction'
 ---
 
 <!-- @format -->

@@ -1,6 +1,8 @@
 ---
 outline: deep
-editLink: true
+next:
+    text: 'Getting started'
+    link: '/guide/getting-started'
 ---
 
 <!-- @format -->
