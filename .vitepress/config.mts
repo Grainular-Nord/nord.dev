@@ -21,6 +21,10 @@ export default defineConfig({
                 text: `Nørd: v.${await getPackageVersion()}`,
                 items: [
                     {
+                        text: 'Changelog',
+                        link: 'https://github.com/iamsebastiandev/nord/releases',
+                    },
+                    {
                         text: 'Github',
                         link: 'https://github.com/iamsebastiandev/nord',
                     },
