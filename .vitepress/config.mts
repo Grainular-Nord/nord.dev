@@ -16,10 +16,19 @@ export default defineConfig({
         logo: '/nord-logo.png',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Quick Start', link: '/guide/getting-started' },
+            { text: 'Getting started', link: '/guide/getting-started' },
             {
                 text: `Nørd: v.${await getPackageVersion()}`,
-                link: 'https://github.com/iamsebastiandev/nord',
+                items: [
+                    {
+                        text: 'Github',
+                        link: 'https://github.com/iamsebastiandev/nord',
+                    },
+                    {
+                        text: 'npm',
+                        link: 'https://npmjs.org/@grainular/nord',
+                    },
+                ],
             },
         ],
 
@@ -65,8 +74,6 @@ export default defineConfig({
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2023-present Sebastian Heinz',
         },
-
-        externalLinkIcon: true,
     },
     srcExclude: ['readme.md', 'license.md', 'contributing.md'],
     sitemap: {
