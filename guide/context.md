@@ -10,15 +10,7 @@ next: false
 
 # Context
 
-The `createContext` function allows the creation of a global, non reactive context provided to share data or state between components.
-
-::: info
-The created context provider has no intrinsic association with any component or component tree. It exists on a global module space and can be used to send and retrieve data in any direction.
-:::
-
-## Overview
-
-Context in Nørd provides a way to share values like configurations, user data, or themes across different parts of your application without explicitly passing props down through the component tree. It’s ideal for global data that many components may need.
+Context in Nørd is a global, non reactive context as a way to share values like configurations, user data, or themes across different parts of your application without explicitly passing props down through the component tree. It’s ideal for global data that many components may need.
 
 ## Creating a Context Provider
 
@@ -30,6 +22,10 @@ import { createContext } from '@grainular/nord';
 
 export const themeContext = createContext({ theme: 'dark' });
 ```
+
+::: info
+The created context provider has no intrinsic association with any component or component tree. It exists on a global module space and can be used to send and retrieve data in any direction.
+:::
 
 ## Setting a value on a Context
 
