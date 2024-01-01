@@ -1,3 +1,11 @@
+---
+outline: deep
+next:
+    text: 'Readonly'
+    link: '/grain/readonly'
+prev: false
+---
+
 <!-- @format -->
 
 # Grain
@@ -5,7 +13,7 @@
 A `Grain` is Nørd primary reactive primitive. They are created using the `grain` function, which returns a `Grain`.
 
 ::: info In The Code:
-You can see the function signature here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts)
+You can see the function signature & implementation here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts)
 :::
 
 ## Creating a Grain
