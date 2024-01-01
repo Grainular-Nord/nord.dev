@@ -12,7 +12,7 @@ prev:
 
 # Readonly
 
-readonly is a function to create a `ReadonlyGrain`, which is the basic form of a `Grain`. A `ReadonlyGrain` can be subscribed to, but cannot be updated by it self.
+`readonly` is a function to create a `ReadonlyGrain`, which is the basic form of a `Grain`. A `ReadonlyGrain` can be subscribed to, but cannot be updated by it self.
 
 Type: `readonly<V>(grain: Grain<V>): ReadonlyGrain<V>`
 
