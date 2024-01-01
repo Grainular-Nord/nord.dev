@@ -12,79 +12,84 @@ prev:
 
 # Grains
 
-`Grain`'s are a core concept in Nørd, offering a reactive approach to state management within your components, enabling dynamic and responsive web applications. Grains are first-class members in Nørd, and are provided with an higher abstraction level then other reactive primitives.
+`Grains` are Nørds reactive primitives, offering a reactive approach to state management within your components, enabling dynamic and responsive web applications. As the fundamental building blocks of the Nørd framework, Grains allow for the creation, manipulation, and observation of reactive state in a straightforward and efficient manner.
 
 ::: tip
-You can read more about the different functions provided by Nørd in the [`Grain`](../grain/grain.md) section.
+Grains are normal JavaScript functions, and can be used inside and outside of components. This makes scoping grains to different contexts as well as sharing state between components easy.
 :::
+
+## Overview
+
+Grains in Nørd are designed to simplify state management in web applications. They represent encapsulated units of state that emit updates whenever their state changes. This reactive nature ensures that components depending on these Grains are automatically updated, leading to a more intuitive and maintainable codebase.
 
 ## Creating a Grain
 
-To create a `Grain`, you can use the `grain()` function, which initializes a new reactive variable with an initial value.
+A Grain is created using the grain() function, which initializes the Grain with a value. This value can be of any type, making Grains versatile in handling various data structures.
 
 ```js
-// count.grain.js
 import { grain } from '@grainular/nord';
 
-const count = grain(0); // Creates a grain with an initial value of 0
+const count = grain(0); // creates a Grain<number>
 ```
-
-::: tip
-`Grains` are normal JavaScript functions, and can be created and accessed anywhere. They not only serve as reactive primitive, but will do the heavy lifting of your application's state management.
-:::
 
 ## Accessing a Grain's value
 
-To access the `Grain`'s current value, call it as a function.
+To access a Grains value, you can either call it as a function to retrieve it's latest state, or subscribe to it and be notified of changes.
 
 ```js
-import { count } from '../count.grain.js';
+import { grain } from '@grainular/nord';
 
+const count = grain(0); // creates a Grain<number>
+
+// Access the grains value
 console.log(count()); // logs 0
+count.subscribe((value) => console.log(value)); // logs 0, and will be called whenever the value changes.
 ```
 
-## Subscribing to a Grain
+### Updating a Grain
 
-To receive notifications about changes in a `Grain`'s value, you can `subscribe` to it. The `subscribe` function returns an `unsubscriber` function that can be used to stop receiving updates.
-
-```js
-import { count } from '../count.grain.js';
-
-const unsubscribe = count.subscribe((value) => console.log(value)); // logs 0 immediately
-unsubscribe(); // No changes will be logged now
-```
-
-## Setting a Grain's value
-
-To set a `Grain`'s value, call it's `set` method.
+Grains can be updated using either the set or update methods. The set method replaces the Grain's current value, while update applies a function to the current value to produce a new one. Updating the value will notify all subscribers of that grain.
 
 ```js
-import { count } from '../count.grain.js';
-
+// Using set
 count.set(1);
-console.log(count()); // logs 1
+
+// Using update
+count.update((current) => current + 1);
 ```
 
-## Updating a Grain's value
+### Different Grains
 
-To update a `Grain`'s value, use its `update` method and provide a callback to update the value.
+There are multiple different type of Grains, explained in their respective section:
 
-```js
-import { count } from '../count.grain.js';
+-   [`readonly`](../grain/readonly.md): Allows accessing a grains value, but not changing it.
+-   [`derived`](../grain/derived.md): Allows creating a readonly grain out of another grain, while providing a transform function.
+-   [`combined`](../grain/combined.md): Creates a new grain out of other grains, updating every time any of the dependent grains changes.
+-   [`get`](../grain/get.md): Creates a readonly grain, that can be used to access properties of a Object grain.
 
-count.update((count) => count + 1);
-console.log(count()); // logs 1
-```
+## API
 
-## Using a Grain inside a Component's template
+The grain function is used to create a new Grain. It initializes the Grain with a specified value and optionally a comparison function to determine value changes.
 
-When you use a `Grain` inside a component's template, the template automatically subscribes to the `Grain`. It updates the node's value whenever the `Grain`'s value changes, and unsubscription is handled automatically.
+### Type
 
-```js
-const App = createComponent((html) => {
-    const name = grain('Nørd');
+`grain<V>(initial: V, [comparisonFunc]: (prev: V, cur: V) => boolean): Grain<V>`
 
-    // The whole grain is passed here, not it's current value.
-    return html`<h1>Hello, ${name}</h1>`;
-});
-```
+### Template
+
+-   `V` (Type: `any`): A generic parameter that specifies the type of value that the grain tracks. Can be any kind of value.
+
+### Parameters
+
+-   `handler` (Type: `(node: NodeType) => void`): The handler to execute with the associated node. This is what makes up the core of the directive.
+-   `options` (Type: `DirectiveOptions`): A optional options object to configure the created directive.
+    -   `nodeType` (Type: `'Text'` | `'Element'`): Set to have the directive only accept one kind of `Node`. If set, the directive will throw when an incorrect type is received.
+
+### Returns
+
+-   `Grain<V>`: Returns a Grain object of the specified type V. This object includes several methods:
+
+    -   `(): V`: A function to get the current value of the Grain.
+    -   `set(value: V): void`: A method to set a new value for the Grain.
+    -   `subscribe(subscriber: Subscriber<V>, seed: boolean): Unsubscriber`: A method to subscribe to changes in the Grain's value.
+    -   `update(updater: Updater<V>): void`: A method to update the value of the Grain using an updater function.
