@@ -1,7 +1,7 @@
 ---
 outline: deep
 next:
-    text: 'Readonly'
+    text: 'readonly'
     link: '/grain/readonly'
 prev: false
 ---
@@ -12,9 +12,7 @@ prev: false
 
 A `Grain` is Nørd primary reactive primitive. They are created using the `grain` function, which returns a `Grain`.
 
-::: info In The Code:
-You can see the function signature & implementation here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts)
-:::
+Type: `<V>grain(initial: V, [comparisonFunc]: ComparisionFunc<V>): Grain<V>`
 
 ## Creating a Grain
 
@@ -116,4 +114,8 @@ console.log(count()); // Logs 3
 
 ::: tip
 `update` comes especially in handy, when updating single properties of objects.
+:::
+
+::: info In The Code:
+You can see the function signature & implementation here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts)
 :::
