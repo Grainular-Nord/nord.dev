@@ -1,8 +1,8 @@
 ---
 outline: deep
 next:
-    text: 'Grains'
-    link: '/guide/grains'
+    text: 'Templates'
+    link: '/guide/templates'
 prev:
     text: 'Creating the Application'
     link: '/guide/application'
@@ -175,4 +175,4 @@ The `createComponent` function in Nørd is a fundamental building block for defi
 
 ### Returns
 
-a function of type `Component<Props>` that represents the component. This function accepts the component's props and an optional NodeList of children elements. It returns a NodeList that represents the rendered component.
+A function of type `Component<Props>` that represents the component. This function accepts the component's props and an optional NodeList of children elements. It returns a NodeList that represents the rendered component.

@@ -92,6 +92,7 @@ function essentials(): DefaultTheme.SidebarItem[] {
     return [
         { text: 'Creating the Application', link: '/application' },
         { text: 'Components', link: '/components' },
+        { text: 'Templates', link: '/templates' },
         { text: 'Grains', link: '/grains' },
         { text: 'Directives', link: '/directives' },
         { text: 'Context', link: '/context' },
