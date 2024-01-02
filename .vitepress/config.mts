@@ -25,7 +25,7 @@ export default defineConfig({
                         link: 'https://github.com/iamsebastiandev/nord/releases',
                     },
                     {
-                        text: 'Github',
+                        text: `@grainular/nord v.${await getPackageVersion('nord')}`,
                         link: 'https://github.com/iamsebastiandev/nord',
                     },
                     {
