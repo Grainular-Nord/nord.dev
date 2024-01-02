@@ -18,7 +18,7 @@ console.log(props.link, props.name);
 <style scoped>
 .separator {
     border-top: 1px solid var(--vp-c-divider);
-    border-bottom: 1px solid var(--vp-c-divider);
+
     padding-block: 1.5rem;
     margin-top: 4rem;
 }
