@@ -1,5 +1,5 @@
 ---
-outline: false
+outline: deep
 next:
     text: 'forEach'
     link: '/directive/for-each'
@@ -38,6 +38,8 @@ const component = createComponent((html) => {
 
 Depending on which state the `isLoggedIn` `Grain` has, the different templates are shown. Each template is created and destroyed accordingly.
 
-::: info In The Code:
-You can see the function signature & implementation here: [when.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/when.ts)
-:::
+<script setup>
+import CodeLink from '../components/CodeLink.vue'
+</script>
+
+<CodeLink name="when.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/when.ts"></CodeLink>

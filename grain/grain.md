@@ -116,6 +116,8 @@ console.log(count()); // Logs 3
 `update` comes especially in handy, when updating single properties of objects.
 :::
 
-::: info In The Code:
-You can see the function signature & implementation here: [grain.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts)
-:::
+<script setup>
+import CodeLink from '../components/CodeLink.vue'
+</script>
+
+<CodeLink name="grain.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts"></CodeLink>

@@ -57,6 +57,8 @@ unsubscribe();
 count.set(3); // Nothing is logged
 ```
 
-::: info In The Code:
-You can see the function signature & implementation here: [derived.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/derived.ts)
-:::
+<script setup>
+import CodeLink from '../components/CodeLink.vue'
+</script>
+
+<CodeLink name="derived.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/derived.ts"></CodeLink>
