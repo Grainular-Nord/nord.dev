@@ -123,6 +123,6 @@ function directives(): DefaultTheme.SidebarItem[] {
         { text: 'ref', link: '/ref' },
         { text: 'unsafe-html', link: '/unsafe-html' },
         { text: 'reactive', link: '/reactive' },
-        { text: 'Custom directives', link: '/custom-directives' },
+        { text: 'Custom Directives', link: '/custom-directives' },
     ];
 }
