@@ -10,7 +10,7 @@ console.log(props.link, props.name);
         <div class="code-link">
             <strong>⚡️ Code insights:</strong>
             You can see the function signature & implementation here:
-            <a href="{{ props.link }}">{{ props.name }}</a>
+            <a v-bind:href="link">{{ props.name }}</a>
         </div>
     </div>
 </template>
