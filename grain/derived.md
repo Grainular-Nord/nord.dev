@@ -31,10 +31,10 @@ const doubled = derive(count, (value) => value * 2);
 Whenever `count` is updated, `doubled` will be updated too.
 
 ```ts
-import { grain, derive } from '@grainular/nord';
+import { grain, derived } from '@grainular/nord';
 
 const count = grain(0);
-const doubled = derive(count, (value) => value * 2);
+const doubled = derived(count, (value) => value * 2);
 
 console.log(count(), doubled()); // logs 0, 0;
 count.set(1);
@@ -43,7 +43,7 @@ console.log(count(), doubled()); // logs 1, 2;
 
 ## Subscribing to a derived Grain
 
-As the `derive` function creates a `ReadonlyGrain`, subscriptions are created as usual. Internal subscriptions are managed automatically by the `derive` function, meaning that when no `Subscribers` are registered on the derived `Grain`, no updates will be received.
+As the `derived` function creates a `ReadonlyGrain`, subscriptions are created as usual. Internal subscriptions are managed automatically by the `derived` function, meaning that when no `Subscribers` are registered on the derived `Grain`, no updates will be received.
 
 ```ts
 const count = grain(0);
