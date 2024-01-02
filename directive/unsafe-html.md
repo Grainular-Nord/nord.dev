@@ -17,7 +17,7 @@ The `unsafeHtml` directive can be used to inject arbitrary raw HTML into a templ
 Type: `unsafeHtml(html: string): Directive<Text>`
 
 ::: info
-`use` is a pure `Text` directive.
+`unsafeHtml` is a pure `Text` directive.
 :::
 
 ## Using `unsafeHtml`

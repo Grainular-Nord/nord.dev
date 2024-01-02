@@ -17,7 +17,7 @@ The `ref` directive is used to programmatically enable access to DOM elements fo
 Type: `ref<NativeElement extends Element = Element>(): Directive<Element> & { nativeElement: NativeElement }`
 
 ::: info
-`use` is a pure `Element` directive.
+`ref` is a pure `Element` directive.
 :::
 
 ## Using `ref`
