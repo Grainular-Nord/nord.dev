@@ -70,8 +70,16 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/iamsebastiandev/norddev/edit/main/:path',
+            pattern: 'https://github.com/iamsebastiandev/nord.dev/edit/main/:path',
             text: 'Edit this page on GitHub',
+        },
+
+        lastUpdated: {
+            text: 'Updated at',
+            formatOptions: {
+                dateStyle: 'medium',
+                timeStyle: 'medium',
+            },
         },
 
         footer: {
