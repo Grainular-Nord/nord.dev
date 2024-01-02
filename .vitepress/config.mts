@@ -76,14 +76,14 @@ export default defineConfig({
             },
         ],
 
-        socialLinks: [{ icon: 'github', link: 'https://github.com/iamsebastiandev/nord.dev' }],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/grainular-nord/nord.dev' }],
 
         search: {
             provider: 'local',
         },
 
         editLink: {
-            pattern: 'https://github.com/iamsebastiandev/nord.dev/edit/main/:path',
+            pattern: 'https://github.com/grainular-nord/nord.dev/edit/main/:path',
             text: 'Edit this page on GitHub',
         },
 
