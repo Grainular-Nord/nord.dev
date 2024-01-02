@@ -115,6 +115,7 @@ function grains(): DefaultTheme.SidebarItem[] {
 
 function directives(): DefaultTheme.SidebarItem[] {
     return [
+        { text: 'Overview', link: '/overview' },
         { text: 'on', link: '/on' },
         { text: 'when', link: '/when' },
         { text: 'forEach', link: '/for-each' },
@@ -122,5 +123,6 @@ function directives(): DefaultTheme.SidebarItem[] {
         { text: 'ref', link: '/ref' },
         { text: 'unsafe-html', link: '/unsafe-html' },
         { text: 'reactive', link: '/reactive' },
+        { text: 'Custom directives', link: '/custom-directives' },
     ];
 }
