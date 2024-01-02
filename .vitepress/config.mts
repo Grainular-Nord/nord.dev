@@ -22,15 +22,19 @@ export default defineConfig({
                 items: [
                     {
                         text: 'Changelog',
-                        link: 'https://github.com/iamsebastiandev/nord/releases',
+                        link: 'https://github.com/grainular-nord/nord/releases',
                     },
                     {
                         text: `@grainular/nord v.${await getPackageVersion('nord')}`,
-                        link: 'https://github.com/iamsebastiandev/nord',
+                        link: 'https://github.com/grainular-nord/nord',
                     },
                     {
                         text: `@grainular/create-nord v.${await getPackageVersion('create-nord')}`,
-                        link: 'https://github.com/iamsebastiandev/create-nord',
+                        link: 'https://github.com/grainular-nord/create-nord',
+                    },
+                    {
+                        text: `@grainular/nord-rxjs v.${await getPackageVersion('nord-rxjs')}`,
+                        link: 'https://github.com/grainular-nord/nord-rxjs',
                     },
                 ],
             },
@@ -60,6 +64,15 @@ export default defineConfig({
                 base: '/directive/',
                 items: directives(),
                 collapsed: false,
+            },
+            {
+                text: 'Packages',
+                items: [
+                    {
+                        text: 'Nørd-Rxjs',
+                        link: 'https://github.com/grainular-nord/nord-rxjs',
+                    },
+                ],
             },
         ],
 

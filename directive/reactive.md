@@ -38,6 +38,10 @@ The directive will automatically subscribe to the `Observable`, keep track of it
 You can take advantage of named imports to shorten the name if you want. Simply import `{ reactive as $ }` and then use `$` in the template instead of the `reactive` name.
 :::
 
+::: info
+If you would like [RxJS](https://rxjs.dev) as your state-management reactive primitive, you can do so with the `reactive` directive and the [@grainular/nord-rxjs](https://github.com/Grainular-Nord/nord-rxjs) package.
+:::
+
 <script setup>
 import CodeLink from '../components/CodeLink.vue'
 </script>
