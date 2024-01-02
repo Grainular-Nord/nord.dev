@@ -2,8 +2,8 @@
 
 import { DefaultTheme, defineConfig } from 'vitepress';
 
-const getPackageVersion = async () => {
-    return await fetch('https://registry.npmjs.org/@grainular/nord/latest')
+const getPackageVersion = async (pkg: string) => {
+    return await fetch(`https://registry.npmjs.org/@grainular/${pkg}/latest`)
         .then((res) => res.json())
         .then(({ version }) => version);
 };
@@ -18,7 +18,7 @@ export default defineConfig({
             { text: 'Home', link: '/' },
             { text: 'Getting started', link: '/guide/getting-started' },
             {
-                text: `Nørd: v.${await getPackageVersion()}`,
+                text: `Nørd: v.${await getPackageVersion('nord')}`,
                 items: [
                     {
                         text: 'Changelog',
@@ -29,8 +29,8 @@ export default defineConfig({
                         link: 'https://github.com/iamsebastiandev/nord',
                     },
                     {
-                        text: 'npm',
-                        link: 'https://npmjs.org/@grainular/nord',
+                        text: `@grainular/create-nord v.${await getPackageVersion('create-nord')}`,
+                        link: 'https://github.com/iamsebastiandev/create-nord',
                     },
                 ],
             },
