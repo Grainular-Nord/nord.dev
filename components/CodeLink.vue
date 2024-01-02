@@ -8,9 +8,12 @@ console.log(props.link, props.name);
 <template>
     <div class="separator">
         <div class="code-link">
-            <strong>⚡️ Code insights:</strong>
-            You can see the function signature & implementation here:
-            <a v-bind:href="link">{{ props.name }}</a>
+            <span>⚡️</span>
+            <div>
+                <strong> Code insights:</strong>
+                You can see the function signature & implementation here:
+                <a v-bind:href="link">{{ props.name }}</a>
+            </div>
         </div>
     </div>
 </template>
@@ -25,8 +28,9 @@ console.log(props.link, props.name);
 
 .code-link {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
 
+    gap: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
     line-height: 1.5rem;
