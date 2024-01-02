@@ -123,7 +123,6 @@ function grains(): DefaultTheme.SidebarItem[] {
 
 function directives(): DefaultTheme.SidebarItem[] {
     return [
-        { text: 'Overview', link: '/overview' },
         { text: 'on', link: '/on' },
         { text: 'when', link: '/when' },
         { text: 'forEach', link: '/for-each' },
