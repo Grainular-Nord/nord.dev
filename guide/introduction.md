@@ -9,7 +9,7 @@ next:
 
 # What is Nørd?
 
-Nørd is a modern JavaScript framework that enables developers to build web applications with fine-grained reactivity and a component-based architecture. It uses [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates) for HTML rendering, akin to [Lit](https://lit.dev/), and features built-in reactivity through grains, similar to [SolidJS](https://www.solidjs.com/). Nørd is [TypeScript](https://www.typescriptlang.org/)-centric, offering fully typed components and templates.
+Nørd is a modern JavaScript framework that enables developers to build web applications with fine-grained reactivity and a component-based architecture. It uses [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates) for HTML rendering and Grains as primary reactive primitive. Nørd is [TypeScript](https://www.typescriptlang.org/)-centric, offering fully typed components and templates.
 
 ::: tip
 Just looking on how to get started? Check out the [Getting started](./getting-started) section.
