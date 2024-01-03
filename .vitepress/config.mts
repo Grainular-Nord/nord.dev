@@ -69,7 +69,7 @@ export default defineConfig({
                 text: 'Packages',
                 items: [
                     {
-                        text: 'Nørd-Rxjs',
+                        text: 'Nørd-RxJS',
                         link: 'https://github.com/grainular-nord/nord-rxjs',
                     },
                 ],

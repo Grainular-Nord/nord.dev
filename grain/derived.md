@@ -57,8 +57,4 @@ unsubscribe();
 count.set(3); // Nothing is logged
 ```
 
-<script setup>
-import CodeLink from '../components/CodeLink.vue'
-</script>
-
 <CodeLink name="derived.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/derived.ts"></CodeLink>

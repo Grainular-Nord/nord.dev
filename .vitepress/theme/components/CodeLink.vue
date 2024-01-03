@@ -1,8 +1,6 @@
 <!-- @format -->
 <script setup>
 const props = defineProps(['link', 'name']);
-
-console.log(props.link, props.name);
 </script>
 
 <template>

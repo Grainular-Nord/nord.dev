@@ -36,8 +36,4 @@ const button = createComponent((html) => {
 
 Whenever the button is clicked, the event will be logged to the console.
 
-<script setup>
-import CodeLink from '../components/CodeLink.vue'
-</script>
-
 <CodeLink name="on.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/on.ts"></CodeLink>

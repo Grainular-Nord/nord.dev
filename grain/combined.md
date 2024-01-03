@@ -51,8 +51,4 @@ name.set('Hello'); // Logs 'Hello: 1';
 unsubscribe(); // Any further updates will not trigger the subscriber again.
 ```
 
-<script setup>
-import CodeLink from '../components/CodeLink.vue'
-</script>
-
 <CodeLink name="combined.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/combined.ts"></CodeLink>

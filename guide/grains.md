@@ -4,8 +4,8 @@ next:
     text: 'Directives'
     link: '/guide/directives'
 prev:
-    text: 'Components'
-    link: '/guide/components'
+    text: 'Templates'
+    link: '/guide/templates'
 ---
 
 <!-- @format -->

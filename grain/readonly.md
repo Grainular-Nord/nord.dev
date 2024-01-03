@@ -53,8 +53,4 @@ unsubscribe();
 You can see the function signature & implementation here: [readonly.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts)
 :::
 
-<script setup>
-import CodeLink from '../components/CodeLink.vue'
-</script>
-
 <CodeLink name="readonly.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts"></CodeLink>

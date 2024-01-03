@@ -35,8 +35,4 @@ const component = createComponent((html) => {
 
 The directive will log the `Node` to the console when the template is evaluated.
 
-<script setup>
-import CodeLink from '../components/CodeLink.vue'
-</script>
-
 <CodeLink name="use.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/use.ts"></CodeLink>
