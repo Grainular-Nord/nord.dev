@@ -2,7 +2,7 @@
 outline: deep
 next:
     text: 'Grains'
-    link: '/guide/templates'
+    link: '/guide/grains'
 prev:
     text: 'Components'
     link: '/guide/components'
