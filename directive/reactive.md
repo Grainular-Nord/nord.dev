@@ -1,8 +1,8 @@
 ---
 outline: deep
 next:
-    text: 'Custom Directives'
-    link: '/directive/custom-directives'
+    text: 'json'
+    link: '/directive/json'
 prev:
     text: 'unsafeHtml'
     link: '/directive/unsafe-html'

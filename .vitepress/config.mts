@@ -144,6 +144,7 @@ function directives(): DefaultTheme.SidebarItem[] {
         { text: 'ref', link: '/ref' },
         { text: 'unsafe-html', link: '/unsafe-html' },
         { text: 'reactive', link: '/reactive' },
+        { text: 'json', link: '/json' },
         { text: 'Custom Directives', link: '/custom-directives' },
     ];
 }

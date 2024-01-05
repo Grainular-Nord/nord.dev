@@ -2,8 +2,8 @@
 outline: deep
 next: false
 prev:
-    text: 'reactive'
-    link: '/directive/reactive'
+    text: 'json'
+    link: '/directive/json'
 ---
 
 <!-- @format -->
