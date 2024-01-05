@@ -1,8 +1,8 @@
 ---
 outline: deep
 next:
-    text: 'get'
-    link: '/grain/get'
+    text: 'mapped'
+    link: '/grain/mapped'
 prev:
     text: 'derived'
     link: '/grain/derived'
@@ -51,4 +51,4 @@ name.set('Hello'); // Logs 'Hello: 1';
 unsubscribe(); // Any further updates will not trigger the subscriber again.
 ```
 
-<CodeLink name="combined.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/combined.ts"></CodeLink>
+<CodeLink name="combined.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/combined.ts"></CodeLink>

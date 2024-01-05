@@ -36,4 +36,4 @@ const button = createComponent((html) => {
 
 Whenever the button is clicked, the event will be logged to the console.
 
-<CodeLink name="on.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/on.ts"></CodeLink>
+<CodeLink name="on.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/on.ts"></CodeLink>

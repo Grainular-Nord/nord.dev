@@ -46,4 +46,4 @@ This will return a `HTMLDivElement` for each character in the `Grain`. Whenever 
 
 To track changes of the Elements, especially when inserting not in the start or end of the iterable, the `key` attribute can be used to give each element a unique id to compare to when updating.
 
-<CodeLink name="for-each.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/for-each.ts"></CodeLink>
+<CodeLink name="for-each.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/for-each.ts"></CodeLink>

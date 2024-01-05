@@ -42,4 +42,4 @@ You can take advantage of named imports to shorten the name if you want. Simply 
 If you would like [RxJS](https://rxjs.dev) as your state-management reactive primitive, you can do so with the `reactive` directive and the [@grainular/nord-rxjs](https://github.com/Grainular-Nord/nord-rxjs) package.
 :::
 
-<CodeLink name="reactive.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/reactive.ts"></CodeLink>
+<CodeLink name="reactive.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/reactive.ts"></CodeLink>

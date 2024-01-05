@@ -32,4 +32,4 @@ export const App = createComponent((html) => {
 
 This way, whenever the value of `user` changes, the properties inside the template are correctly updated.
 
-<CodeLink name="get.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/get.ts"></CodeLink>
+<CodeLink name="get.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/get.ts"></CodeLink>

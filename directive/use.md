@@ -35,4 +35,4 @@ const component = createComponent((html) => {
 
 The directive will log the `Node` to the console when the template is evaluated.
 
-<CodeLink name="use.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/use.ts"></CodeLink>
+<CodeLink name="use.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/use.ts"></CodeLink>

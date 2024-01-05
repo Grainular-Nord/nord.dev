@@ -36,7 +36,7 @@ $ npm create @grainular/nord
 
 :::
 
-The command will install and execute [`@grainular/create-nord`](https://github.com/IamSebastianDev/create-nord), the official Nørd scaffolding tool. Follow the presented prompts and select a template to scaffold a project in the selected directory.
+The command will install and execute [`@grainular/create-nord`](https://github.com/Grainular-Nord/create-nord), the official Nørd scaffolding tool. Follow the presented prompts and select a template to scaffold a project in the selected directory.
 
 -   `Nørd Web`: A basic html based setup without any build tools.
 -   `Nørd Web (modules)`: A html based application utilising JavaScript modules.

@@ -50,7 +50,7 @@ unsubscribe();
 ```
 
 ::: info In The Code:
-You can see the function signature & implementation here: [readonly.ts](https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts)
+You can see the function signature & implementation here: [readonly.ts](https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/readonly.ts)
 :::
 
-<CodeLink name="readonly.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/readonly.ts"></CodeLink>
+<CodeLink name="readonly.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/readonly.ts"></CodeLink>

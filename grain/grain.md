@@ -116,4 +116,4 @@ console.log(count()); // Logs 3
 `update` comes especially in handy, when updating single properties of objects.
 :::
 
-<CodeLink name="grain.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/grain.ts"></CodeLink>
+<CodeLink name="grain.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/grain.ts"></CodeLink>

@@ -57,4 +57,4 @@ unsubscribe();
 count.set(3); // Nothing is logged
 ```
 
-<CodeLink name="derived.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/grains/derived.ts"></CodeLink>
+<CodeLink name="derived.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/grains/derived.ts"></CodeLink>

@@ -38,4 +38,4 @@ The string will be injected into the template at the specified place as innerHTM
 Using `unsafeHTML` might introduce security vulnerabilities into your application. You should avoid whenever possible.
 :::
 
-<CodeLink name="unsafe-html.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/unsafe-html.ts"></CodeLink>
+<CodeLink name="unsafe-html.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/unsafe-html.ts"></CodeLink>

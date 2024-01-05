@@ -38,4 +38,4 @@ const component = createComponent((html) => {
 
 Depending on which state the `isLoggedIn` `Grain` has, the different templates are shown. Each template is created and destroyed accordingly.
 
-<CodeLink name="when.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/when.ts"></CodeLink>
+<CodeLink name="when.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/when.ts"></CodeLink>

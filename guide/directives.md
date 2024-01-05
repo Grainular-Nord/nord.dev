@@ -1,8 +1,6 @@
 ---
 outline: deep
-next:
-    text: 'Context'
-    link: '/guide/context'
+next: false
 prev:
     text: 'Grains'
     link: '/guide/grains'

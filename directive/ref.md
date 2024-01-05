@@ -42,4 +42,4 @@ Clicking the button will log the `HTMLDivElement` to the console. After creating
 The `nativeElement` property will only be populated once the template is evaluated. You should account for that in your code.
 :::
 
-<CodeLink name="ref.ts" link="https://github.com/IamSebastianDev/nord/blob/main/src/lib/directives/ref.ts"></CodeLink>
+<CodeLink name="ref.ts" link="https://github.com/Grainular-Nord/nord/blob/main/src/lib/directives/ref.ts"></CodeLink>
