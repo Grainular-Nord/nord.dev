@@ -120,7 +120,6 @@ function essentials(): DefaultTheme.SidebarItem[] {
         { text: 'Templates', link: '/templates' },
         { text: 'Grains', link: '/grains' },
         { text: 'Directives', link: '/directives' },
-        { text: 'Context', link: '/context' },
     ];
 }
 
@@ -130,6 +129,8 @@ function grains(): DefaultTheme.SidebarItem[] {
         { text: 'readonly', link: '/readonly' },
         { text: 'derived', link: '/derived' },
         { text: 'combined', link: '/combined' },
+        { text: 'mapped', link: '/mapped' },
+        { text: 'merged', link: '/merged' },
         { text: 'get', link: '/get' },
     ];
 }
