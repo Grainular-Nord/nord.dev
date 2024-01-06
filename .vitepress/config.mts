@@ -101,37 +101,37 @@ export default defineConfig({
                         text: 'Nørd-RxJS',
                         link: 'https://github.com/grainular-nord/nord-rxjs',
                     },
-                    {
-                        text: 'Nørd-Forms',
-                        base: '/packages/forms/',
-                        collapsed: true,
-                        items: [
-                            {
-                                text: 'Overview',
-                                link: '/overview',
-                            },
-                            {
-                                text: 'Controls',
-                                link: '/controls',
-                            },
-                            {
-                                text: 'Group Controls',
-                                link: '/group-controls',
-                            },
-                            {
-                                text: 'List Controls',
-                                link: '/list-controls',
-                            },
-                            {
-                                text: 'Directives',
-                                link: '/directives',
-                            },
-                            {
-                                text: 'Validators',
-                                link: '/validators',
-                            },
-                        ],
-                    },
+                    // {
+                    //     text: 'Nørd-Forms',
+                    //     base: '/packages/forms/',
+                    //     collapsed: true,
+                    //     items: [
+                    //         {
+                    //             text: 'Overview',
+                    //             link: '/overview',
+                    //         },
+                    //         {
+                    //             text: 'Controls',
+                    //             link: '/controls',
+                    //         },
+                    //         {
+                    //             text: 'Group Controls',
+                    //             link: '/group-controls',
+                    //         },
+                    //         {
+                    //             text: 'List Controls',
+                    //             link: '/list-controls',
+                    //         },
+                    //         {
+                    //             text: 'Directives',
+                    //             link: '/directives',
+                    //         },
+                    //         {
+                    //             text: 'Validators',
+                    //             link: '/validators',
+                    //         },
+                    //     ],
+                    // },
                 ],
             },
         ],
