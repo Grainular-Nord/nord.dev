@@ -1,8 +1,8 @@
 ---
 outline: deep
 next:
-    text: 'forEach'
-    link: '/directive/for-each'
+    text: 'each'
+    link: '/directive/each'
 prev:
     text: 'on'
     link: '/directive/on'

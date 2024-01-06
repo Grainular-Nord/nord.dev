@@ -84,7 +84,7 @@ export default defineConfig({
                 items: [
                     { text: 'on', link: '/on' },
                     { text: 'when', link: '/when' },
-                    { text: 'forEach', link: '/for-each' },
+                    { text: 'each', link: '/each' },
                     { text: 'use', link: '/use' },
                     { text: 'ref', link: '/ref' },
                     { text: 'unsafe-html', link: '/unsafe-html' },
