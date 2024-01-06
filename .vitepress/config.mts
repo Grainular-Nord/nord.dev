@@ -17,7 +17,7 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Getting started', link: '/guide/getting-started' },
-            { text: 'Grainular State', link: '/guide/grains' },
+            { text: 'Grains', link: '/guide/grains' },
             { text: 'Directives', link: '/guide/directives' },
             {
                 text: `Nørd: v.${await getPackageVersion('nord')}`,

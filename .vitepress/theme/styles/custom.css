@@ -3,4 +3,48 @@
     --vp-c-brand-1: rgba(90, 176, 166, 0.85);
     --vp-c-brand-2: rgba(90, 176, 166, 1);
     --code-link-bg: rgba(90, 176, 166, 0.25);
+    --color-accent-75: rgba(90, 176, 166, 0.5);
+    --color-contrast-75: rgba(165, 79, 89, 0.5);
+}
+
+.VPHero .image-container {
+    display: grid;
+    place-items: center;
+}
+
+.VPHero .image-bg {
+    background: linear-gradient(-45deg, var(--color-accent-75), var(--color-contrast-75));
+    border-radius: 50%;
+    animation: aurora 15s infinite linear;
+    transform: unset;
+    top: unset;
+    left: unset;
+}
+
+@keyframes aurora {
+    0% {
+        filter: blur(50px) saturate(4) hue-rotate(0);
+        scale: 1.2;
+        rotate: 0deg;
+    }
+    25% {
+        filter: blur(50px) saturate(5) hue-rotate(90deg);
+        scale: 1.25;
+        rotate: 90deg;
+    }
+    50% {
+        filter: blur(50px) saturate(4) hue-rotate(180deg);
+        scale: 1.2;
+        rotate: 180deg;
+    }
+    75% {
+        filter: blur(50px) saturate(5) hue-rotate(270deg);
+        scale: 1.15;
+        rotate: 270deg;
+    }
+    100% {
+        filter: blur(50px) saturate(4) hue-rotate(360deg);
+        scale: 1.2;
+        rotate: 360deg;
+    }
 }
