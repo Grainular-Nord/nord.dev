@@ -35,6 +35,10 @@ export default defineConfig({
                         link: 'https://github.com/grainular-nord/create-nord',
                     },
                     {
+                        text: `@grainular/nord-forms v.${await getPackageVersion('nord-forms')}`,
+                        link: 'https://github.com/grainular-nord/nord-forms',
+                    },
+                    {
                         text: `@grainular/nord-rxjs v.${await getPackageVersion('nord-rxjs')}`,
                         link: 'https://github.com/grainular-nord/nord-rxjs',
                     },
@@ -101,37 +105,37 @@ export default defineConfig({
                         text: 'Nørd-RxJS',
                         link: 'https://github.com/grainular-nord/nord-rxjs',
                     },
-                    // {
-                    //     text: 'Nørd-Forms',
-                    //     base: '/packages/forms/',
-                    //     collapsed: true,
-                    //     items: [
-                    //         {
-                    //             text: 'Overview',
-                    //             link: '/overview',
-                    //         },
-                    //         {
-                    //             text: 'Controls',
-                    //             link: '/controls',
-                    //         },
-                    //         {
-                    //             text: 'Group Controls',
-                    //             link: '/group-controls',
-                    //         },
-                    //         {
-                    //             text: 'List Controls',
-                    //             link: '/list-controls',
-                    //         },
-                    //         {
-                    //             text: 'Directives',
-                    //             link: '/directives',
-                    //         },
-                    //         {
-                    //             text: 'Validators',
-                    //             link: '/validators',
-                    //         },
-                    //     ],
-                    // },
+                    {
+                        text: 'Nørd-Forms',
+                        base: '/packages/forms/',
+                        collapsed: true,
+                        items: [
+                            {
+                                text: 'Overview',
+                                link: '/overview',
+                            },
+                            {
+                                text: 'Controls',
+                                link: '/controls',
+                            },
+                            {
+                                text: 'Group Controls',
+                                link: '/group-controls',
+                            },
+                            {
+                                text: 'List Controls',
+                                link: '/list-controls',
+                            },
+                            {
+                                text: 'Directives',
+                                link: '/directives',
+                            },
+                            {
+                                text: 'Validators',
+                                link: '/validators',
+                            },
+                        ],
+                    },
                 ],
             },
         ],
