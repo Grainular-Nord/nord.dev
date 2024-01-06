@@ -17,6 +17,8 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Getting started', link: '/guide/getting-started' },
+            { text: 'Grainular State', link: '/guide/grains' },
+            { text: 'Directives', link: '/guide/directives' },
             {
                 text: `Nørd: v.${await getPackageVersion('nord')}`,
                 items: [
@@ -44,25 +46,52 @@ export default defineConfig({
             {
                 text: 'Introduction',
                 base: '/guide/',
-                items: introduction(),
+                items: [
+                    { text: 'What is Nørd?', link: '/introduction' },
+                    { text: 'Getting started', link: '/getting-started' },
+                ],
                 collapsed: false,
             },
             {
                 text: 'Essentials',
                 base: '/guide/',
-                items: essentials(),
+                items: [
+                    { text: 'Creating the Application', link: '/application' },
+                    { text: 'Components', link: '/components' },
+                    { text: 'Templates', link: '/templates' },
+                    { text: 'Grains', link: '/grains' },
+                    { text: 'Directives', link: '/directives' },
+                ],
                 collapsed: false,
             },
             {
                 text: 'Grains',
                 base: '/grain/',
-                items: grains(),
+                items: [
+                    { text: 'grain', link: '/grain' },
+                    { text: 'readonly', link: '/readonly' },
+                    { text: 'derived', link: '/derived' },
+                    { text: 'combined', link: '/combined' },
+                    { text: 'mapped', link: '/mapped' },
+                    { text: 'merged', link: '/merged' },
+                    { text: 'get', link: '/get' },
+                ],
                 collapsed: false,
             },
             {
                 text: 'Directives',
                 base: '/directive/',
-                items: directives(),
+                items: [
+                    { text: 'on', link: '/on' },
+                    { text: 'when', link: '/when' },
+                    { text: 'forEach', link: '/for-each' },
+                    { text: 'use', link: '/use' },
+                    { text: 'ref', link: '/ref' },
+                    { text: 'unsafe-html', link: '/unsafe-html' },
+                    { text: 'reactive', link: '/reactive' },
+                    { text: 'json', link: '/json' },
+                    { text: 'Custom Directives', link: '/custom-directives' },
+                ],
                 collapsed: false,
             },
             {
@@ -71,6 +100,37 @@ export default defineConfig({
                     {
                         text: 'Nørd-RxJS',
                         link: 'https://github.com/grainular-nord/nord-rxjs',
+                    },
+                    {
+                        text: 'Nørd-Forms',
+                        base: '/packages/forms/',
+                        collapsed: true,
+                        items: [
+                            {
+                                text: 'Overview',
+                                link: '/overview',
+                            },
+                            {
+                                text: 'Controls',
+                                link: '/controls',
+                            },
+                            {
+                                text: 'Group Controls',
+                                link: '/group-controls',
+                            },
+                            {
+                                text: 'List Controls',
+                                link: '/list-controls',
+                            },
+                            {
+                                text: 'Directives',
+                                link: '/directives',
+                            },
+                            {
+                                text: 'Validators',
+                                link: '/validators',
+                            },
+                        ],
                     },
                 ],
             },
@@ -105,46 +165,3 @@ export default defineConfig({
         hostname: 'https://nordjs.dev',
     },
 });
-
-function introduction(): DefaultTheme.SidebarItem[] {
-    return [
-        { text: 'What is Nørd?', link: '/introduction' },
-        { text: 'Getting started', link: '/getting-started' },
-    ];
-}
-
-function essentials(): DefaultTheme.SidebarItem[] {
-    return [
-        { text: 'Creating the Application', link: '/application' },
-        { text: 'Components', link: '/components' },
-        { text: 'Templates', link: '/templates' },
-        { text: 'Grains', link: '/grains' },
-        { text: 'Directives', link: '/directives' },
-    ];
-}
-
-function grains(): DefaultTheme.SidebarItem[] {
-    return [
-        { text: 'grain', link: '/grain' },
-        { text: 'readonly', link: '/readonly' },
-        { text: 'derived', link: '/derived' },
-        { text: 'combined', link: '/combined' },
-        { text: 'mapped', link: '/mapped' },
-        { text: 'merged', link: '/merged' },
-        { text: 'get', link: '/get' },
-    ];
-}
-
-function directives(): DefaultTheme.SidebarItem[] {
-    return [
-        { text: 'on', link: '/on' },
-        { text: 'when', link: '/when' },
-        { text: 'forEach', link: '/for-each' },
-        { text: 'use', link: '/use' },
-        { text: 'ref', link: '/ref' },
-        { text: 'unsafe-html', link: '/unsafe-html' },
-        { text: 'reactive', link: '/reactive' },
-        { text: 'json', link: '/json' },
-        { text: 'Custom Directives', link: '/custom-directives' },
-    ];
-}
