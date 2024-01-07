@@ -14,7 +14,7 @@ next:
 
 Controls in `@grainular/nord-forms` are fundamental building blocks for managing form input elements. They provide a robust interface for state management, validation, and interaction with various HTML input elements.
 
-## Control Creation
+## Creating a Control
 
 A Control is created using the `createControl` function. This function generates a Control instance that manages the state, validation, and behavior of an associated form input element.
 
@@ -26,7 +26,7 @@ Parameters
 -   `init`: An object of type `ControlInit<Type>`, providing initial configuration.
 -   `[validators]`: An optional array of `Validator<Type | null>` for applying validation rules.
 
-## Example Usage
+## Using the Control
 
 ```ts
 import { createControl, createControlGroup } from '@grainular/nord-forms';
@@ -46,6 +46,10 @@ return html` <form>
 ```
 
 In this example, the `name` field of the form is bound to a Control. Any changes in the input element are synchronized with the Control, and vice versa.
+
+::: tip
+`Nørd-Forms` uses the `type` of the Control to infer the correct data type for the control and parses it accordingly.
+:::
 
 ## Control API
 
