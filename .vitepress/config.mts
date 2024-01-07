@@ -65,6 +65,7 @@ export default defineConfig({
                     { text: 'Templates', link: '/templates' },
                     { text: 'Grains', link: '/grains' },
                     { text: 'Directives', link: '/directives' },
+                    { text: 'Tooling', link: '/tooling' },
                 ],
                 collapsed: false,
             },

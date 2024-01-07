@@ -1,6 +1,8 @@
 ---
 outline: deep
-next: false
+next:
+    text: 'Tooling'
+    link: '/guide/tooling'
 prev:
     text: 'Grains'
     link: '/guide/grains'
