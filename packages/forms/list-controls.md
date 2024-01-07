@@ -181,3 +181,5 @@ Retrieves a control item at a specific index within the ControlList.
 
 **Type**: `() => ControlSchema[]`  
 Retrieves an array of all control items within the ControlList.
+
+<CodeLink name="create-control-list.ts" link="https://github.com/Grainular-Nord/nord-forms/blob/main/src/lib/controls/create-control-list.ts"></CodeLink>
