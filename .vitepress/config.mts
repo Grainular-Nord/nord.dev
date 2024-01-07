@@ -119,11 +119,11 @@ export default defineConfig({
                                 link: '/controls',
                             },
                             {
-                                text: 'Group Controls',
+                                text: 'Control Groups',
                                 link: '/group-controls',
                             },
                             {
-                                text: 'List Controls',
+                                text: 'Control Lists',
                                 link: '/list-controls',
                             },
                             {
