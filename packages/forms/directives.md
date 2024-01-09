@@ -22,7 +22,7 @@ Read more about Nørd Directives [here](../../guide/directives.md);
 
 The `bind` directive creates a two-way binding between a specified attribute of an `HTMLInputElement` and a `Grain` value. It allows for dynamic synchronization between the input element and the application state.
 
-### Usage
+### Using the `bind` directive
 
 ```ts
 import { bind } from '@grainular/nord';
@@ -40,8 +40,35 @@ In this example, the `bind` directive links the 'value' attribute of an input el
 
 ## `controlErrors`
 
-The `controlErrors` function creates a directive for displaying control errors. It takes a `Grain` representing control errors, a dictionary mapping error keys to messages, and a function to render the error messages.
+The `controlErrors` directive provides a dynamic way to display validation errors for form controls. It utilizes a `Grain` that represents the current state of control errors, along with a dictionary to map error keys to user-friendly messages.
 
-::: warning
-The API for the controlErrors directive is not yet stable and will change soon.
+### Using the `controlErrors` directive
+
+```ts
+import { controlErrors } from '@grainular/nord';
+
+const form = createControlGroup({
+    name: createControl<string>({ value: null }, [required]),
+});
+
+const errorMessages = {
+    required: 'This field is required.',
+    minLength: 'Minimum length not met',
+    // Add other error message mappings here
+};
+
+return html`<form>
+    <label>
+        Name:
+        <input ${form.name.control} type="text" />
+        <span ${controlErrors(form.name.errors).fromDict(errorMessages)}></span>
+    </label>
+    <button>Submit</button>
+</form>`;
+```
+
+In this example, `controlErrors` is used to display error messages for the `name` control. The directive listens for changes in the control's error state and updates the displayed message accordingly based on the provided dictionary.
+
+::: tip
+Customize the rendering of error messages by modifying the errorMessages dictionary to suit your application's needs.
 :::
