@@ -15,6 +15,14 @@ There are several ways to try out Nørd online, without ever opening a code edit
 
 -   To try out Nørd in a plain, HTML based setup, you can use this [JSFiddle](https://jsfiddle.net/iamsebastiandev/ctnm8yw9)
 -   You can check out a more elaborate example based on Vite + TS in this [StackBlitz](https://stackblitz.com/edit/nord?file=src%2Fmain.ts) project.
+-   Check out the simple [Codesandbox](https://codesandbox.io/p/devbox/grainular-nord-v67284) example below:
+
+<iframe src="https://codesandbox.io/p/devbox/grainular-nord-v67284?embed=1&file=%2Fsrc%2Fmain.ts"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="@grainular/nord"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ## Creating a Nørd Application
 
