@@ -61,11 +61,11 @@ Let's consider a scenario where we have two components: `Parent` and `Child`. We
 import { createComponent } from '@grainular/nord';
 
 // Child component
-const Child = createComponent((html, { name }, children) => {
+const Child = createComponent((html, { name, $children }) => {
     return html`
         <div>
             <p>Hello, ${name}</p>
-            ${children}
+            ${$children}
             <!-- Children elements will be rendered here -->
         </div>
     `;
