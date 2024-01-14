@@ -19,6 +19,7 @@ export default defineConfig({
             { text: 'Getting started', link: '/guide/getting-started' },
             { text: 'Grains', link: '/guide/grains' },
             { text: 'Directives', link: '/guide/directives' },
+            { text: 'Routing', link: '/packages/router/overview' },
             {
                 text: `Nørd: v.${await getPackageVersion('nord')}`,
                 items: [
@@ -29,6 +30,10 @@ export default defineConfig({
                     {
                         text: `@grainular/nord v.${await getPackageVersion('nord')}`,
                         link: 'https://github.com/grainular-nord/nord',
+                    },
+                    {
+                        text: `@grainular/nord-router v.${await getPackageVersion('nord-router')}`,
+                        link: 'https://github.com/grainular-nord/nord-router',
                     },
                     {
                         text: `@grainular/create-nord v.${await getPackageVersion('create-nord')}`,
@@ -109,6 +114,37 @@ export default defineConfig({
                     {
                         text: 'Nørd-RxJS',
                         link: 'https://github.com/grainular-nord/nord-rxjs',
+                    },
+                    {
+                        text: 'Nørd-Router',
+                        base: '/packages/router/',
+                        collapsed: true,
+                        items: [
+                            {
+                                text: 'Overview',
+                                link: '/overview',
+                            },
+                            {
+                                text: 'Router',
+                                link: '/router',
+                            },
+                            {
+                                text: 'Activated Route',
+                                link: '/activated-route',
+                            },
+                            {
+                                text: 'Router Link',
+                                link: '/router-link',
+                            },
+                            {
+                                text: 'linkData',
+                                link: '/link-data',
+                            },
+                            {
+                                text: 'Advanced Routing',
+                                link: '/advanced-routing',
+                            },
+                        ],
                     },
                     {
                         text: 'Nørd-Forms',
