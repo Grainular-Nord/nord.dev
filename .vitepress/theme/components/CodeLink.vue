@@ -10,7 +10,7 @@ const props = defineProps(['link', 'name']);
             <div>
                 <strong> Code insights:</strong>
                 You can see the function signature & implementation here:
-                <a v-bind:href="link">{{ props.name }}</a>
+                <a v-bind:href="link" target="_blank">{{ props.name }}</a>
             </div>
         </div>
     </div>
